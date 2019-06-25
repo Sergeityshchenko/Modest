@@ -50,7 +50,7 @@ nav ul li a:hover{
 }
 
 nav ul li a.active{
-  border: 1px solid rgb(34, 206, 236);
+  border: 1px solid rgb(20, 165, 145);
   border-radius: 4px;
   color:rgb(34, 206, 236);
 }
@@ -62,7 +62,7 @@ nav ul li a.active{
 }
 
 .background-URL {
-  background: url(/images/Header-background.jpg) no-repeat center top;  
+  background: url(/images/Pen.jpg) no-repeat center top;  
   background-size: cover;
 }
 
@@ -100,8 +100,8 @@ nav ul li a.active{
 }
 .header-content .header-buttons div:hover{
   cursor: pointer;
-  background-color: rgb(34, 206, 236);
-  border: 1px solid rgb(34, 206, 236);
+  background-color: rgb(20, 165, 145);
+  border: 1px solid rgb(20, 165, 145);
 }
 
 .section-title {
@@ -116,33 +116,58 @@ nav ul li a.active{
   display: flex;
   font-size: .8em;
 }
-.section-title .lists .description-list {
-  width: 70%;
+
+.section-title .lists .before-title {
+  width: 5px;
+  height: 10px;
+  background-color: gray;
+  color: red;
 }
 
-.section-title .lists .number-list {
-  width: 30%;
+.section-title .lists .description-list {
+  width: 60%;
 }
-.section-title .lists .number-list .cube {
-  margin: 0px;
-  padding: 0px;
-  width: 30px;
-  height: 30px;
-  background-color: rgb(34, 206, 236);
-  color: white; 
+
+.section-title .lists .description-list .five-icons  {
+  font-family: Verdana;
+  font-size: 1.5em;
   display: flex;
-  flex-direction: row;
+}
+
+.section-title .lists .description-list .five-icons div {
+  width: 45px;
+  height: 45px;
+  color: white;
+  background-color: rgb(179, 178, 178);
+  border: 1px solid white;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.section-title .lists .number-list div {
-  margin: 0px;
-  padding: 0px;
+
+.section-title .lists .description-list .five-icons div:hover {
+  background-color: lightgray;
+  cursor: pointer; 
 }
-.one,
-.two,
-.three {
+
+.section-title .lists .number-list {
+  width: 40%;
+  margin: auto;
+}
+.section-title .lists .number-list .cube {
+  width: 40px;
+  height: 40px;
+  margin: 17px;
+  background-color: rgb(20, 165, 145);
+  color: white; 
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
 }
 
 
