@@ -170,6 +170,55 @@ nav ul li a.active{
   justify-content: space-around;
 }
 
+.team-title {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-title .team {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.team .photo1 {
+  width: 263px;
+  height: 300px;
+  background: url(/images/1man.jpg);
+  background-size: cover;
+}
+.team .photo2 {
+  width: 263px;
+  height: 300px;
+  background: url(/images/2man.jpg);
+}
+.team .photo3 {
+  width: 263px;
+  height: 300px;
+  background: url(/images/3girl.jpg);
+}
+.team .photo4 {
+  width: 263px;
+  height: 300px;
+  background: url(/images/2man.jpg);
+}
+
+.members-name {
+  margin-top: 100%;
+  background-color: gray;
+  color: white;
+}
+.members-name h4,
+.members-name h3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
 
 
 
