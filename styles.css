@@ -58,7 +58,6 @@ nav ul li a.active{
 
 .container {
   width: 100%;
-  margin-top: 0px;
   padding: 0px;
 }
 
@@ -135,10 +134,11 @@ nav ul li a.active{
   display: flex;
 }
 
-.section-title .lists .description-list .five-icons div {
+.section-title .lists .description-list .five-icons a {
   width: 45px;
   height: 45px;
   color: white;
+  text-decoration: none;
   background-color: rgb(179, 178, 178);
   border: 1px solid white;
   display: flex;
@@ -146,7 +146,7 @@ nav ul li a.active{
   align-items: center;
 }
 
-.section-title .lists .description-list .five-icons div:hover {
+.section-title .lists .description-list .five-icons a:hover {
   background-color: lightgray;
   cursor: pointer; 
 }
@@ -178,40 +178,77 @@ nav ul li a.active{
 
 .team-title .team  {
   display: flex;
-}
-.team-title .team img  {
-  width: 213px;
-  height: 250px;
+  
 }
 .team-title .team .members-name  {
-  margin: 0px 20px 0px 0px;
-  background-color: rgb(66, 66, 65);
-  color: white;
+  margin: 0px 25px 0px 0px;
+  background-color: #e1e6ea;
+  transition: 0.3s linear;
+  color: black;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+}
+.team-title .team .members-name img  {
+  max-width: 100%;
+  height: auto;
+}
+.team-title .team .members-name:hover img {
+  opacity: 0.5;
+  background-color: 
+}
+.social-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50% auto;
+  justify-content: center;
+}
+.social-link-item {
+  width: 50px;
+  height: 50px;
+  background-color: #3a454d;
+  margin: 0 1px;
+  list-style: none;
+}
+
+.social-link-item:hover {
+  background-color: #5e717a;
+}
+
+.social-link-item a {
+  padding-top: 12px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.social-links {
+  margin: 50% 25px;
+  position: absolute;
+  top: 0;
+  width: 80%;
+  display: none;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+.team-title .team .members-name h3,
+.team-title .team .members-name p  {
+  font-family:Arial;
+  font-size: 1em;
+  margin: 10px 0px 10px 10px;
+  
 }
 
 .work-container {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  transition: opacity .6s;
+  background-color: rgb(83, 83, 81);
 }
 
 .work-title {
   width: 70%;
   margin: auto;
   color: white;
-
 }
 .work-title .works {
   display: flex;
@@ -223,8 +260,7 @@ nav ul li a.active{
 }
 .work-title .works img  {
   width: 295px;
-  height: 320px;
-  
+  height: 300px;
 }
 
 .work-button {
@@ -256,15 +292,34 @@ nav ul li a.active{
 }
 
 .services-title .services {
- display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .services-title .services .service-name {
-  margin: 0px 20px 20px 0px;
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- align-items: center;
+margin: 0px 20px 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
  }
+
+ .features-title{
+  width: 100%;
+  margin: auto;
+}
+.features-title .features {
+  width: 17%;
+  display: flex;
+
+}
+.features-description {
+  margin: 10px 20px 10px 0px;
+}
+.features-description div {
+  width: 100%;
+}
+
 
 
 
