@@ -194,10 +194,12 @@ nav ul li a.active{
   max-width: 100%;
   height: auto;
 }
-.team-title .team .members-name:hover img {
+.team-title .team .members-name:hover {
   opacity: 0.5;
-  background-color: 
+  background-color: rgb(74, 74, 77);
+  color: white;
 }
+
 .social-links ul {
   display: flex;
   flex-wrap: wrap;
@@ -297,28 +299,46 @@ nav ul li a.active{
   align-items: center;
 }
 .services-title .services .service-name {
-margin: 0px 20px 20px 0px;
+  margin: 0px 20px 20px 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
  }
 
- .features-title{
-  width: 100%;
-  margin: auto;
+.features-container {
+  background-color: rgb(83, 83, 81);
 }
-.features-title .features {
-  width: 17%;
-  display: flex;
 
+ .features-title{
+  width: 70%;
+  margin: auto;
+  color: white;
 }
-.features-description {
-  margin: 10px 20px 10px 0px;
+.features {
+  display:flex;
 }
-.features-description div {
+
+.features img  {
+  width: 295px;
+  height: auto;
+}
+
+.touch-title {
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+.map {
   width: 100%;
+  height: 300px;
 }
+
+.footer {
+  background-color: rgb(83, 83, 81); 
+}
+
+
 
 
 
