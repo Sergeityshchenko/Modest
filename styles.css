@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
 body {
-  font-family: Arial;
+  font-family: Roboto;
   margin: 0px auto;
+}
+
+h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+br {
+  height: 100px;
 }
 
 div.logo {
@@ -13,15 +24,15 @@ div.logo {
 }
 
 nav {
-  width: 100%;;
-  margin: 0px auto;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9); 
 }
 nav div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 .nav-container {
@@ -56,55 +67,157 @@ nav ul li a.active{
   color:rgb(34, 206, 236);
 }
 
-.container {
+nav button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  display: none;
+  outline: none;
+}
+
+nav button:hover {
+  cursor: pointer; 
+}
+
+nav button .line {
   width: 100%;
-  padding: 0px;
+  height: 3px;
+  background: white;
+  display: block;
+  margin: 5px 0;
 }
 
-.background-URL {
-  background: url(/images/Pen.jpg) no-repeat center top;  
-  background-size: cover;
-}
-
-.header-content  {
-  width: 70%;
-  display: flex;
-  margin: auto;
+nav .drawer {
+  display: none;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  transform: translateX(-100%);
+  transition: transform 0.7s;
 }
 
-.header-content .header {
-  margin: 150px 300px 150px 0px; 
+nav .drawer ul li {
+  margin: 0 10px;
+}
+
+nav .backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #00000066;
+  z-index: 1;
+}
+
+@media (max-width: 1080px) {
+  nav ul {
+    display: none;
+  }
+
+  nav button {
+    display: block;
+  }
+
+  nav .drawer {
+    display: block;
+    width: 160px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(0, 0, 0, 1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+  }
+
+  nav .drawer ul {
+    margin: 0;
+    padding: 0;
+    width: 140px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  nav .drawer ul li {
+    margin: 10px 0;
+  }
+}
+
+ .container {
+  width: 100%;
+  margin:0;
+  padding: 0;
+}
+
+
+.header-background-url {
+  width: 100%;
+  height: 635px;
+  background: url(/images/Pen.jpg) no-repeat center top;
+  display: flex;  
+  justify-content: space-around;
+} 
+
+.all-headers-div {
+  width: 70%;
+  margin: auto;
+}
+
+.header-title {
   color: white;
 }
 
-.header-content .header-buttons {
+.all-headers-div .buttons {
   display: flex;
- 
+  align-items: center;
 }
 
-.header-content .header-buttons div{
-  width: 80px;
-  height: 30px;
-  font-size: .8em;
+.buttons .button{
+  width: 95px;
+  height: 35px;
+  font-size: .7em;
   text-transform: uppercase;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 10px 0px 0px;
   color:white;
-  border: 1px solid white;
-  border-radius: 4px;  
+  border: 2px solid white;
+  border-radius: 5px;  
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.header-content .header-buttons div:hover{
+.buttons .button:hover{
   cursor: pointer;
   background-color: rgb(20, 165, 145);
-  border: 1px solid rgb(20, 165, 145);
+  border: 2px solid rgb(20, 165, 145);
 }
 
-.section-title {
+ .dots {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.dots .dot {
+  width: 10px;
+  height: 10px;
+  margin: 0px 5px;
+  border: 2px solid red;
+  border-radius: 100%;
+}
+.dots .dot.active {
+  background-color: white;
+}
+
+
+
+/*.section-title {
   width: 70%;
   margin: auto;
   display: flex;
@@ -332,12 +445,7 @@ nav ul li a.active{
 .map {
   width: 100%;
   height: 300px;
-}
-
-.footer {
-  background-color: rgb(83, 83, 81); 
-}
-
+} */
 
 
 
