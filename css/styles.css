@@ -80,6 +80,65 @@ nav {
   padding-left: 10px
 }
 
+.slider {
+  background-image: url(../img/Pen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  min-height: 661px;
+}
+
+.slider__item {
+  text-align: left;
+  padding-top: 238px;
+  max-width: 700px;
+  letter-spacing: 1.5;
+}
+
+.slider__title {
+  text-transform: uppercase;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.slider__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #ccd0d7;
+  margin-bottom: 45px;
+}
+
+.slider__buttons {
+  display: flex;
+}
+.slider__btn_1,
+.slider__btn_2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 17px 23px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider__buttons .slider__btn_1 + .slider__btn_2 {
+  margin-left: 10px;
+}
+
+.slider__btn_1:hover,
+.slider__btn_2:hover {
+  background-color: #23b7a4;
+  border: 2px solid #23b7a4;
+  border-radius: 5px;
+}
+
+
+
 
 
 
