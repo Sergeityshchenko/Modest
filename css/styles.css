@@ -16,7 +16,6 @@ li {
 }
 
 body {
-  /*font-family: 'Quattrocento Sans', sans-serif ; */
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 400;
   font-style: 14px;
@@ -136,6 +135,117 @@ nav {
   border: 2px solid #23b7a4;
   border-radius: 5px;
 }
+
+.about__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__item__description {
+  text-align: left;
+  padding-top: 82px;
+  max-width: 622px;
+  letter-spacing: 1.5;
+}
+
+.about__title {
+  text-transform: uppercase;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  color: #292f36;
+  font-weight: 700;
+  margin-bottom: 62px;
+  padding-left: 12px;
+  border: 0px solid #c8cdd0;
+  border-left-width: 10px;
+}
+
+.about__text {
+  margin-bottom: 108px;
+}
+
+.about__text p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.about__text p + p {
+  margin-top: 40px;
+}
+
+.about__social__link {
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.about__social__link a {
+  width: 60px;
+  height: 60px;
+  background-color: #c8cdd0;
+  border: 0px solid #ffffff;
+  border-right-width: 1px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__social__link a:hover {
+  background-color: #d0d5d9;
+}
+
+.about__item__advantage {
+  margin-top: 176px;
+  max-width: 457px;
+}
+
+.about__item .about__item__description + .about__item__advantage {
+  margin-left: 60px;
+} 
+
+.cubes__list {
+  display: flex;
+}
+
+.cubes__list .cube + .cube {
+  margin-top: 60px;
+}
+
+.cube {
+  margin-top: 12px;
+}
+
+.cube img {
+  width: 50px;
+  height: 50px;
+}
+
+.cube__specification {
+  max-width: 380px;
+  margin-bottom: 23px;
+  margin-left: 17px;
+}
+
+.cube__title {
+  text-transform: uppercase;
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #292f36;
+  margin-bottom: 7px;
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.cube__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
 
 
 
