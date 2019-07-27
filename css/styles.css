@@ -650,3 +650,126 @@ nav {
   margin-top: 14px;
 
 }
+
+.contact__section {
+  margin: 0;
+  padding: 80px 0px 104px;
+}
+
+.contact__section__title {
+  text-transform: uppercase;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  color: #292f36;
+  font-weight: 700;
+  margin-bottom: 60px;  
+  padding-left: 12px;
+  border: 0px solid #e1e6ea;
+  border-left-width: 10px;
+}
+
+.contact__section__map {
+  display: block;
+  margin: 0 auto;
+  background-image: url(/img/contact-map.png);
+  max-width: 100%;
+  height: 346px;
+}
+
+.contact__form__area {
+  margin-top: -130px;
+  display: flex;
+}
+
+.contact__form__area .contact__info + .contact__form {
+  margin-left: 30px;
+}
+
+.contact__info {
+
+}
+
+.contact__info__title {
+  text-transform: uppercase;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  margin-left: 10px;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  color: #292f36;
+  font-weight: 700;
+}
+
+.contact__info__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #8d8f92;
+}
+
+.contact__info__description {
+  width: 555px;
+}
+
+.contact__info__description .contact__info__description__item + .contact__info__description__item {
+  margin-top: 40px;
+}
+
+.contact__form {
+  width: 555px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+form label {
+  width: calc(50% - 20px);
+  display: flex;
+  flex-flow: column;
+  margin: 0 0 20px;
+}
+
+form label input {
+  width: 100%;
+  border: none;
+  padding: 14px 5px;
+  border-radius: 6px;
+  background: #EAEEF1;
+  box-sizing: border-box;
+}
+
+.message {
+  width: 100%;
+}
+
+.message textarea {
+  width: 100%;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 6px;
+  background: #EAEEF1;
+  resize: vertical;
+  max-height: 400px;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+
+.submit {
+  min-width: 150px;
+  height: 42px;
+  color: white;
+  border: 2px solid #23B7A4;
+  border-radius: 4px;
+  margin: 20px 0;
+  outline: none;
+  background: #23B7A4;
+}
