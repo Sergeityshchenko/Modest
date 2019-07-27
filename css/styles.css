@@ -738,6 +738,14 @@ form label {
   margin: 0 0 20px;
 }
 
+small {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #8d8f92;
+}
+
 form label input {
   width: 100%;
   border: none;
@@ -764,12 +772,47 @@ form label input {
 }
 
 .submit {
+  text-transform: uppercase;
   min-width: 150px;
-  height: 42px;
+  height: 44px;
   color: white;
   border: 2px solid #23B7A4;
   border-radius: 4px;
   margin: 20px 0;
   outline: none;
   background: #23B7A4;
+}
+
+footer {
+  height: 95px;
+  background-color: #3a454d;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyrights {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 35px;
+}
+
+.footer__social__links {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  margin-top: 35px;
+}
+
+.footer__social__links a {
+  list-style-type: none;
+  color: #ffffff;
 }
