@@ -83,6 +83,33 @@ nav {
   padding-left: 10px
 }
 
+nav button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  display: none;
+  outline: none;
+}
+
+nav button .line {
+  width: 100%;
+  height: 3px;
+  background: white;
+  display: block;
+  margin: 5px 0;
+}
+
+@media (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+
+  nav button {
+    display: block;
+  }
+}
+
 .slider {
   background-image: url(../img/Pen.jpg);
   background-repeat: no-repeat;
@@ -361,6 +388,13 @@ nav {
   background-color: #3a454d;
   color: #ffffff;
   transition: .6s;
+}
+
+@media (max-width: 1170px) {
+  .list__team {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .lovely__work {
@@ -815,4 +849,12 @@ footer {
 .footer__social__links a {
   list-style-type: none;
   color: #ffffff;
+  transition: .6s;
 }
+
+.footer__social__links a:hover {
+  color: #23B7A4;
+  transition: .6s;
+}
+
+
